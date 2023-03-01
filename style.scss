@@ -8,7 +8,7 @@
 }
 .top{
     height: 1024px;
-    background-image: url(../Homework1/img/top.jpg);
+    background-image: url(./img/top.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -45,7 +45,7 @@
     color: #FFFFFF;
 }
 }
-.menu{
+.game-list{
     background-color:#000915;
     height: 556px;
     display: grid;
@@ -72,11 +72,11 @@
 }
 
 .play1{
-    background-image: url(../Homework1/img/menu1.jpg);
+    background-image: url(./img/menu1.jpg);
 }
 .play2{
-    background-image: url(../Homework1/img/menu2.jpg);
+    background-image: url(./img/menu2.jpg);
 }
 .play3{
-    background-image: url(../Homework1/img/menu3.jpg);
+    background-image: url(./img/menu3.jpg);
 }
