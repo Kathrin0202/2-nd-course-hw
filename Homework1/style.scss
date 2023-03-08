@@ -22,7 +22,6 @@
     font-size: 64px;
     line-height: 78px;
     color: #FFFFFF;
-    width: 788px;
     padding-top: 217px;
     &_text{
         font-family: 'Montserrat';
@@ -43,6 +42,10 @@
     padding: 13px 74px;
     border-color: transparent;
     color: #FFFFFF;
+    transition: all 0.3s;
+    &:hover{
+      background-color: #EB443F;
+  }
 }
 }
 .game-list{
@@ -68,6 +71,11 @@
         padding-left: 32px;
         box-sizing: border-box;
         border-radius: 16px;
+        transition: all 0.3s;
+        &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 3px #44D2FF;
+  }
 }
 }
 
@@ -80,3 +88,5 @@
 .play3{
     background-image: url(./img/menu3.jpg);
 }
+
+@import'mobile';
