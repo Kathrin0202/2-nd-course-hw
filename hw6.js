@@ -109,4 +109,3 @@ for (let x = 0; x <= 6; x++){
     if (a != 0)
  console.log((a[x] + a[x+1]) / 6);
 };
-
