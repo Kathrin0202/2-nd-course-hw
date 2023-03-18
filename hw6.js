@@ -25,6 +25,7 @@ let massif = [
     [1, 1, 1],
     [1, 1, 1],
 ];
+
 for (let massifIt of massif) {
     for (let element of massifIt) {
     console.log(massifIt);
