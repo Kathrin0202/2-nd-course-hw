@@ -23,12 +23,13 @@ console.log(num);
 let massif = [
     [1, 1, 1],
     [1, 1, 1],
-    [1, 1, 1]
+    [1, 1, 1],
 ];
-
-for (let item of massif) {
-    console.log(item);
+for (let massifIt of massif) {
+    for (let element of massifIt) {
+    console.log(massifIt);
 }
+};
 
 //Задание 5
 let arr = [1, 1, 1];
