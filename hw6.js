@@ -2,16 +2,16 @@
 const number = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < number.length; i++){
-    if (number[i] == 0) break;
+    if (number[i] == 10) break;
     console.log(number[i]);
 };
 
 //Задание 2
 const numb = [1, 5, 4, 10, 0, 3];
 
-numb.forEach((el, index) => {
+numb.forEach((el, indexOf) => {
     if (el == 4)
-    console.log(`${index}: ${el}`);
+    console.log(`${indexOf}: ${el}`);
 });
 
 //Задание 3
@@ -25,12 +25,7 @@ let massif = [
     [1, 1, 1],
     [1, 1, 1],
 ];
-
-for (let massifIt of massif) {
-    for (let element of massifIt) {
-    console.log(massifIt);
-}
-};
+console.log(Array(massif));
 
 //Задание 5
 let arr = [1, 1, 1];
@@ -60,13 +55,13 @@ console.log(lineReverse);
 
 //Задание 9
 let type = [[1, 2, 3,],[4, 5, 6]];
-console.log(type.join(','));
+console.log(Array(type.join(',')));
 
 //Задание 10
 let sum = [3, 5, 6];
 let result = 0;
 
-for (let y = 0; y <= sum.length; y++){
+for (let y = 0; y <= sum.length - 1; y++){
     if (y == 2) break;
     console.log(sum[y] + sum[y+1]);
 };
@@ -77,15 +72,15 @@ let res = square.map(item => (item ** 2));
 console.log(res);
 
 //Задание 12
-let LengthWords = ['привет', '', 'па', 'Как у вас дела', 'л'];
-let getLengthWords = LengthWords.map(function(count) {
+let lengthWords = ['привет', '', 'па', 'Как у вас дела', 'л'];
+let getLengthWords = lengthWords.map(function(count) {
     return count.length;
 });
 console.log(getLengthWords);
 
 //Задание 13
-const negative = [4, 5, 7];
-let resul = negative.map(item => (item * -1));
+const negative = [4, 5, 7, -9, -6, 8, -1];
+let resul = negative.filter(ite => ite <= 0);
 console.log(resul);
 
 //Задание 14
@@ -93,7 +88,7 @@ const getRandom = (leng, max) => (
     [...new Array(leng)]
     .map(() => Math.round(Math.random() * max))
 );
-let r = console.log(getRandom(10, 10));
+let r = getRandom(10, 10);
 
 for (let r = 0; r <= 10; r++)
  if (r % 2 == 0){
@@ -105,9 +100,9 @@ for (let r = 0; r <= 10; r++)
     [...new Array(lenght)]
     .map(() => Math.round(Math.random() * max))
 );
-let a = console.log(getRandomInt(6, 10));
+let a = getRandomInt(6, 10);
 
-for (let x = 0; x <= 6; x++){
+for (let x = 0; x <= getRandomInt.length; x++){
     if (a != 0)
- console.log((a[x] + a[x+1]) / 6);
+ console.log((a[x] + a[x+1]) / getRandomInt.length);
 };
