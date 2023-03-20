@@ -37,8 +37,7 @@ let userAge = prompt('Сколько вам лет?');
     function message() {
         alert('Вы ввели неправильное значение');
     }
- } 
- else if (userAge > 0 && userAge <= 12) {
+ } else if (userAge > 0 && userAge <= 12) {
     function message() {
         alert('Привет, друг!');
     }
