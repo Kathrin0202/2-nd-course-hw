@@ -25,7 +25,6 @@
   font-size: 64px;
   line-height: 78px;
   color: #FFFFFF;
-  width: 788px;
   padding-top: 217px;
 }
 .top_title_text {
@@ -46,6 +45,10 @@
   padding: 13px 74px;
   border-color: transparent;
   color: #FFFFFF;
+  transition: all 0.3s;
+}
+.top_button:hover {
+  background-color: #EB443F;
 }
 
 .game-list {
@@ -72,6 +75,11 @@
   padding-left: 32px;
   box-sizing: border-box;
   border-radius: 16px;
+  transition: all 0.3s;
+}
+.game-list_item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 3px #44D2FF;
 }
 
 .play1 {
@@ -84,4 +92,95 @@
 
 .play3 {
   background-image: url(./img/menu3.jpg);
+}
+
+.first-section {
+  height: 800px;
+  background-color: #000915;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first-game {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: baseline;
+}
+.first-game_title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.first-game_text {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.first-game_button {
+  background: #9C0332;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 13px 74px;
+  border-color: transparent;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+.first-game_button:hover {
+  background-color: #EB443F;
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    align-items: center;
+    text-align: center;
+    width: auto;
+  }
+  .top_title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .top_title_text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .game-list {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 127px;
+  }
+  .game-list_item {
+    width: 343px;
+  }
+  .first-game {
+    align-items: center;
+    text-align: center;
+  }
+  .first-game_title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .first-game_text {
+    line-height: 22px;
+  }
+  .first-game_icon {
+    width: 344px;
+    height: 236px;
+  }
 }/*# sourceMappingURL=style.css.map */
