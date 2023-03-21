@@ -11,4 +11,19 @@ if (monthNumber == 12 || monthNumber >= 1 && monthNumber <= 2) {
 } else {
     console.log ('Такого месяца нет');
 }
+};
+
+function word() {
+let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+let arrSort = arr.sort(() => Math.random() - 0.5);
+let answer = alert(arrSort);
+let firstAsk = prompt('Чему равняется первый элемент массива?');
+let endAsk = prompt('Чему равняется последний элемент массива?');
+if (arrSort.includes(firstAsk) && arrSort.includes(endAsk)) {
+    alert('Молодец!');
+} else if (arrSort.includes(firstAsk) || arrSort.includes(endAsk)) {
+    alert('Вы были близки к победе');
+} else {
+    alert('Вы ответили неверно');
 }
+};

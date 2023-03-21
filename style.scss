@@ -131,5 +131,48 @@
           }
         }
 }
+.second-section{
+    height: 800px;
+    background-color: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-game{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: baseline;
+    &_title{
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+    &_text{
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+    &_button{
+            background: #9C0332;
+            border-radius: 30px;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 13px 74px;
+            border-color: transparent;
+            color: #FFFFFF;
+            transition: all 0.3s;
+            &:hover{
+              background-color: #EB443F;
+          }
+        }
+}
 
 @import'mobile';
