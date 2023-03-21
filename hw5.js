@@ -37,13 +37,11 @@ let userAge = prompt('Сколько вам лет?');
     function message() {
         alert('Вы ввели неправильное значение');
     }
- } 
- else if (userAge > 0 && userAge <= 12) {
+ } else if (userAge > 0 && userAge <= 12) {
     function message() {
         alert('Привет, друг!');
     }
-}
- else {
+} else {
     function message() {
         alert('Добро пожаловать!');
     }
@@ -64,20 +62,19 @@ multi(6, 8);
 multi(9, 'k');
 
 //Задание 6
+
 let question = Number(prompt('Введите число'));
 let userAnswer = question ** 3;
 
+function answer(){
 if (question) {
-    function answer() {
-        alert(`${question} в кубе равняется ${userAnswer}`);
-    }
-} else {
-    function answer(){
+        alert (`${question} в кубе равняется ${userAnswer}`);
+} else if (isNaN(question)){
        alert ('Переданный параметр не является числом');
     }
 }
-
 answer();
+
 
 //Задание 7
 const radius = 5;
